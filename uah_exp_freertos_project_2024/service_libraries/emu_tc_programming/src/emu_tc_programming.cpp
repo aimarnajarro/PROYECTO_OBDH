@@ -20,7 +20,7 @@
 EmuGSS_TCProgram129_1 prog_FT_129_0010_step_1(
     FT_129_0010_TIME_step0,
     "FT_SOLO_EPD_ICU_SERV_129_0010 step 1, Set CVx and CVy values",
-    1.5, 0.12
+    0.54, 0.12
 );
 
 #endif

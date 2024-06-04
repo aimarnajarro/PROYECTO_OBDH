@@ -4,7 +4,7 @@
 //******************************************************************************
 // EDROOM Service Library
 
-#define _EDROOM_IS_EMBEDDED_
+#define EDROOM_IS_EMBEDDED
 
 #include <public/edroomsl_iface_v1.h>
 

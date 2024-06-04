@@ -26,8 +26,12 @@ class UAHExpEmuKinematic PUSService129::mUAHExpEmulator;
 void PUSService129::ExecTC(CDTCHandler &tcHandler, CDTMList &tmList) {
 
 	switch (tcHandler.GetSubType()) {
-
-	//TODO
+	case (1):
+			Exec129_1TC(tcHandler, tmList);
+			break;
+	case (2):
+			Exec129_2TC(tcHandler, tmList);
+			break;
 
 	default:
 		break;
@@ -37,17 +41,45 @@ void PUSService129::ExecTC(CDTCHandler &tcHandler, CDTMList &tmList) {
 
 void PUSService129::Exec129_1TC(CDTCHandler &tcHandler, CDTMList &tmList) {
 
+    // Leer valores de CVx y CVy del tcHandler
+    float CVx = tcHandler.GetNextFloat();
+    float CVy = tcHandler.GetNextFloat();
 
-	//TODO
+    // Validar que CVx y CVy están en el rango [-1.0, +1.0]
+    if (CVx >= -1.0f && CVx <= 1.0f && CVy >= -1.0f && CVy <= 1.0f) {
+        sCVx = CVx;
+        sCVy = CVy;
 
-
-
+        // Generar un TM de éxito
+        PUSService1::BuildTM_1_7(tcHandler, tmList); // Success
+    } else {
+    	if (CVx < -1.0f || CVx > 1.0f) {
+    				PUSService1::BuildTM_1_8_TC_129_1_CVNotValid(tcHandler, tmList, CVx);
+    			} else if (CVy < -1.0f || CVy > 1.0f) {
+    				PUSService1::BuildTM_1_8_TC_129_1_CVNotValid(tcHandler, tmList, CVy);
+    			}
+    }
 }
 
 void PUSService129::Exec129_2TC(CDTCHandler &tcHandler, CDTMList &tmList) {
+    // Leer valores de Kpx y Kpy del tcHandler
+    float Kpx = tcHandler.GetNextFloat();
+    float Kpy = tcHandler.GetNextFloat();
 
-	//TODO
+    // Validar que Kpx y Kpy están en el rango [0.0, +0.5]
+    if (Kpx >= 0.0f && Kpx <= 0.5f && Kpy >= 0.0f && Kpy <= 0.5f) {
+        sKpx = Kpx;
+        sKpy = Kpy;
 
+        // Generar un TM de éxito
+        PUSService1::BuildTM_1_7(tcHandler, tmList); // Success
+    } else {
+    	if (Kpx < 0.0f || Kpx > 0.5f) {
+    	    				PUSService1::BuildTM_1_8_TC_129_2_KPNotValid(tcHandler, tmList, Kpx);
+    	    			} else if (Kpy < 0.0f || Kpy > 0.05) {
+    	    				PUSService1::BuildTM_1_8_TC_129_2_KPNotValid(tcHandler, tmList, Kpy);
+    	    			}
+}
 }
 
 const float ActuatorMAX_X_Y_Newtons = 0.100; //100 MiliNewtons

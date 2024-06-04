@@ -39,7 +39,7 @@ public:
 	 */
 	 enum TEDROOMCCExplorerManagerSignal { EDROOMSignalTimeout, 
 							EDROOMSignalDestroy, 
-							SGuidance, 
+							SGuidance,
 							EDROOMIRQsignal, 
 							SBKGTC, 
 							SHK_FDIR_TC, 

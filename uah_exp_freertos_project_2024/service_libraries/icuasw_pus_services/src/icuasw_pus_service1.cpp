@@ -26,6 +26,8 @@
 #define TM_1_8_TC_19_1_EV_ACTION_REJECTED 		10
 #define TM_1_8_TC_19_X_EV_ACTION_NOT_DEFINED  	11
 #define TM_1_8_TC_2_X_DEVICE_NOT_VALID  		12
+#define TM_1_8_TC_129_1_CV_Not_Valid			13
+#define TM_1_8_TC_129_2_KP_Not_Valid			14
 
 //SourceID TC Counters
 uint16_t SOLO_Mission_TimeLine_TC_Counter = 0;
@@ -221,6 +223,20 @@ void PUSService1::TryTCAcceptation(CDTCHandler &tcHandler) {
 				acceptationStatus = TCAcceptationSubTypeError;
 			}
 			break;
+		case (129):
+				switch (subtype) {
+					case (1):
+						//TC Classified as Reboot
+						tcHandler.SetExecCtrlAsGuidanceTC();
+						break;
+					case (2):
+						//TC Classified as BKGTC
+						tcHandler.SetExecCtrlAsGuidanceTC();
+									break;
+					default:
+						acceptationStatus = TCAcceptationSubTypeError;
+						}
+						break;
 		default:
 			//TC is not accepted
 			acceptationStatus = TCAcceptationTypeError;
@@ -467,4 +483,30 @@ void PUSService1::BuildTM_1_8_TC_2_X_DeviceNotValid(CDTCHandler &tcHandler,
 	tmList.AddTM(tmHandler.CloseTM());
 
 }
+void PUSService1::BuildTM_1_8_TC_129_1_CVNotValid(CDTCHandler &tcHandler,
+		CDTMList &tmList, float CV) {
 
+	CDTMHandler tmHandler(1, 8);
+
+	tmHandler.SetUInt16AppDataField(tcHandler.GetPacketID());
+	tmHandler.SetUInt16AppDataField(tcHandler.GetPackSeqCtrl());
+	tmHandler.SetUInt8AppDataField(TM_1_8_TC_129_1_CV_Not_Valid);
+	tmHandler.SetFloatAppDataField(CV);
+
+	tmList.AddTM(tmHandler.CloseTM());
+
+}
+
+void PUSService1::BuildTM_1_8_TC_129_2_KPNotValid(CDTCHandler &tcHandler,
+		CDTMList &tmList, float KP) {
+
+	CDTMHandler tmHandler(1, 8);
+
+	tmHandler.SetUInt16AppDataField(tcHandler.GetPacketID());
+	tmHandler.SetUInt16AppDataField(tcHandler.GetPackSeqCtrl());
+	tmHandler.SetUInt8AppDataField(TM_1_8_TC_129_2_KP_Not_Valid);
+	tmHandler.SetFloatAppDataField(KP);
+
+	tmList.AddTM(tmHandler.CloseTM());
+
+}

@@ -73,6 +73,12 @@ public:
   	  	  	  	  CDTMList &tmList,
   	  	  	  	  uint8_t devID);
 
+ static void BuildTM_1_8_TC_129_1_CVNotValid(CDTCHandler &tcHandler,
+			CDTMList &tmList, float CV);
+
+ static void BuildTM_1_8_TC_129_2_KPNotValid(CDTCHandler &tcHandler,
+			CDTMList &tmList, float KP);
+
 private:
 
 

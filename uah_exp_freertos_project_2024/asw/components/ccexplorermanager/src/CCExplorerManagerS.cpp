@@ -1,5 +1,3 @@
-
-
 #include <public/ccexplorermanager_iface_v1.h>
 
 
@@ -348,4 +346,3 @@ void CCExplorerManager::CEDROOMMemory::SetMemory(TEDROOMUInt32 numMessages_ ,
 
 
 }
-

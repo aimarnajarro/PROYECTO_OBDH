@@ -133,19 +133,19 @@ protected:
 	}
 
         /**
-
+	 
         * \brief Set mTCExecCtrl to ExecCtrlGuidance
-
+	 
         *
-
+	 
         */
 
 	void SetExecCtrlAsGuidanceTC() {
 
 
-
+		
                 mTCExecCtrl = ExecCtrlGuidanceTC;
-
+	
         }
 
 
@@ -213,8 +213,7 @@ public:
 			return ExecCtrlBKGTC == mTCExecCtrl;
 	}
 
-
-	bool_t IsGuidanceTC() {
+        bool_t IsGuidanceTC() {
 			return ExecCtrlGuidanceTC == mTCExecCtrl;
 	}
 

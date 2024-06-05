@@ -41,26 +41,6 @@ EmuGSS_TCProgram128_1 prog_FT_129_0010_step_2(
 #endif
 */
 
-//El truco final
-
-/* Mis variables son versos,
- * mis bucles, un coro,
- * y en cada iteración, imploro:
- * “¡Suba mi nota, por favor!”
- *
- * Los condicionales
- * se convierten en ruegos,
- * y las funciones,
- *  en plegarias al cielo
- *
- * En el lenguaje de los bits y los bytes, le digo:
- * “¡Profesor Óscar, eleve mi nota, sea mi abrigo!”
- * Y si mi código no es perfecto,
- * si hay errores en su trama,
- * recuerde que detrás de cada línea,
- * hay un corazón que clama */
-
-
 
 #define FT_SOLO_EPD_ICU_SERV_129_0020
 #ifdef FT_SOLO_EPD_ICU_SERV_129_0020

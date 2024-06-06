@@ -56,14 +56,14 @@ EmuGSS_TCProgram128_1 prog_FT_129_0010_step_2(
 // Paso 0: Fijar el valor de las constantes Kpx y Kpy
 EmuGSS_TCProgram129_2 prog_FT_129_0020_step_0(
 	FT_129_0020_TIME_step0,
-    "FT_SOLO_EPD_ICU_SERV_129_0020 step 1, Set Kpx and Kpy values",
+    "FT_SOLO_EPD_ICU_SERV_129_0020 step 0, Set Kpx and Kpy values",
     0.45, 0.4
 	);
 
 // Paso 1: Fijar el valor de las velocidades CVx y CVy para que haya un DV
 	EmuGSS_TCProgram129_1 prog_FT_129_0020_step_1(
     FT_129_0020_TIME_step1,
-    "FT_SOLO_EPD_ICU_SERV_129_0020 step 0, Set CVx and CVy values",
+    "FT_SOLO_EPD_ICU_SERV_129_0020 step 1, Set CVx and CVy values",
     0.6, 0.8
 	);
 
@@ -77,14 +77,14 @@ EmuGSS_TCProgram129_2 prog_FT_129_0020_step_0(
 // Paso 3: Fijar el valor de las velocidad CVx fuera de rango para que salte la 1.8
 	EmuGSS_TCProgram129_2 prog_FT_129_0020_step_3(
     FT_129_0020_TIME_step3,
-	"FT_SOLO_EPD_ICU_SERV_129_0020 step 2, Set Kpx value out of range",
+	"FT_SOLO_EPD_ICU_SERV_129_0020 step 3, Set Kpx value out of range",
 	8, 0.12
 	);
 
 // Paso 4: Hacer un reboot cuando se alcanza la velocidad deseada
 	EmuGSS_TCProgram128_1 prog_FT_129_0020_step_4(
     FT_129_0020_TIME_step4,
-    "FT_SOLO_EPD_ICU_SERV_129_0010 step 3, Reboot when finished");
+    "FT_SOLO_EPD_ICU_SERV_129_0010 step 4, Reboot when finished");
 
 #endif
 

@@ -1,0 +1,157 @@
+
+Current UniTime is = 100001
+
+GSS Tx TC(129,2) FT_SOLO_EPD_ICU_SERV_129_0020 step 1, Set Kpx and Kpy values
+GSS Rx TM (1,1)
+GSS Rx TM (1,7)
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100002
+
+GSS Tx TC(129,1) FT_SOLO_EPD_ICU_SERV_129_0020 step 0, Set CVx and CVy values
+GSS Rx TM (1,1)
+GSS Rx TM (1,7)
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.59, 2.77, 3.30, 4.99, 9.96]
+
+Current UniTime is = 100003
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100004
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.59, 2.82, 3.32, 4.99, 9.95]
+
+Current UniTime is = 100005
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 10 Param Values [0.291 m/s, 0.291 m/s, 8.138 m/s, 0.994 kg]
+
+Current UniTime is = 100006
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.60, 2.77, 3.32, 4.99, 10.05]
+
+Current UniTime is = 100007
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100008
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.62, 2.81, 3.31, 4.99, 10.05]
+
+Current UniTime is = 100009
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100010
+
+GSS Tx TC(129,1) FT_SOLO_EPD_ICU_SERV_129_0020 step 2, Set CVx value out of range
+GSS Rx TM (1,1)
+GSS Rx TM (1,8)
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.62, 2.79, 3.32, 5.01, 10.01]
+GSS Rx TM (3,25) SID 10 Param Values [0.568 m/s, 0.708 m/s, 16.262 m/s, 0.987 kg]
+
+Current UniTime is = 100011
+
+GSS Tx TC(129,2) FT_SOLO_EPD_ICU_SERV_129_0020 step 2, Set Kpx value out of range
+GSS Rx TM (1,1)
+GSS Rx TM (1,8)
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100012
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.60, 2.80, 3.30, 5.00, 10.02]
+
+Current UniTime is = 100013
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100014
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.62, 2.82, 3.28, 5.00, 9.96]
+
+Current UniTime is = 100015
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 10 Param Values [0.597 m/s, 0.788 m/s, 24.385 m/s, 0.986 kg]
+
+Current UniTime is = 100016
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.62, 2.78, 3.28, 5.00, 10.04]
+
+Current UniTime is = 100017
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100018
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.62, 2.78, 3.32, 4.99, 10.02]
+
+Current UniTime is = 100019
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100020
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.59, 2.80, 3.32, 5.00, 10.04]
+GSS Rx TM (3,25) SID 10 Param Values [0.600 m/s, 0.799 m/s, 32.508 m/s, 0.986 kg]
+
+Current UniTime is = 100021
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100022
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.61, 2.79, 3.31, 5.01, 10.03]
+
+Current UniTime is = 100023
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100024
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.57, 2.80, 3.32, 5.01, 10.04]
+
+Current UniTime is = 100025
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 10 Param Values [0.600 m/s, 0.800 m/s, 40.631 m/s, 0.986 kg]
+
+Current UniTime is = 100026
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.59, 2.80, 3.28, 5.02, 10.03]
+
+Current UniTime is = 100027
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100028
+Do_HK
+Do_Monitoring
+GSS Rx TM (3,25) SID 0 Param Values [1.60, 2.82, 3.29, 4.98, 10.02]
+
+Current UniTime is = 100029
+Do_HK
+Do_Monitoring
+
+Current UniTime is = 100030
+
+GSS Tx TC(128,1) FT_SOLO_EPD_ICU_SERV_129_0010 step 3, Reboot when finished
+GSS Rx TM (1,1)
+GSS Rx TM (1,7)
